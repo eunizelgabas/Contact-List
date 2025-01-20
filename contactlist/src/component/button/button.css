@@ -1,0 +1,45 @@
+
+.button {
+    font: inherit;
+    cursor: pointer;
+    border: 1px solid #dc36d6;
+    background-color: #ffffff;
+    color: #1f1a09;
+    padding: 0.5rem 1.5rem;
+    border-radius: 15px;
+    padding: 10px 20px;
+  }
+  
+  .button:hover,
+  .button:active {
+    border-color: #6e1262;
+    color: #1f1a09;
+  } 
+  
+  .text-button {
+    font: inherit;
+    cursor: pointer;
+    background-color: #b919dd;
+    border: none;
+    color: #ffffff;
+    border-radius: 13px;
+    padding: 10px 20px;
+  }
+  
+  .text-button:hover,
+  .text-button:active {
+    background-color: #8a1180;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 1rem; /* Space between buttons */
+  }
+  
+  .icon{
+    border: none;
+    cursor: pointer;
+    /* background-color: #ffffff; */
+    width: 20px;
+    height: 20px;
+  }

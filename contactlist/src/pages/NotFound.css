@@ -1,0 +1,5 @@
+.not-found-item {
+    display: flex;                /* Use Flexbox for layout */
+    align-items: center;         /* Vertically center items */
+    gap: 10px;                   /* Space between icon and heading */
+  }

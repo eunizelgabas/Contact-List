@@ -1,0 +1,64 @@
+.table-container {
+    width: 100%;
+    overflow-x: auto; 
+  }
+  
+  .customer-table {
+    width: 100%; 
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .customer-table th,
+  .customer-table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .customer-table th {
+    background-color: #b731e0;
+    color: #fff;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .icon {
+    cursor: pointer;
+  }
+  
+  .text-link {
+    color: black;
+  }
+  
+  .text-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Add media query to make the table more responsive on small screens */
+  @media (max-width: 768px) {
+    .customer-table th,
+    .customer-table td {
+      padding: 10px;
+    }
+  
+    .actions {
+      gap: 10px; /* Reduce gap between actions on smaller screens */
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .customer-table th,
+    .customer-table td {
+      padding: 8px;
+      font-size: 14px; /* Adjust font size for very small screens */
+    }
+  
+    .actions {
+      gap: 5px; /* Reduce gap even further */
+    }
+  }
+  
