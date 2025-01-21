@@ -46,10 +46,11 @@ function InputForm({ customer, onClose, onAlertShow }) {
     try {
       if (customer) {
         // await handleEditCustomer(customer.id, formData); // Edit existing customer
-        await axios
-          .put(`http://localhost:5000/update/${customer._id}`, formData)
+        await (customer._id 
+          ? axios.put(`http://localhost:5000/update/${customer._id}`, formData) 
+          : axios.put(`http://localhost:5000/update/${customer.id}`, formData))
           .then((result) => {
-            location.reload(); 
+            location.reload(); // Reload the page to reflect changes
           })
           .catch((err) => {
             console.error("Error updating customer:", err);
